@@ -1,0 +1,16 @@
+{
+  "name": "prove_assignments",
+  "version": "1.0.0",
+  "main": "routes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon prove01.js",
+    "start-server": "node prove01.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
+}
