@@ -7,7 +7,7 @@ const server = http.createServer((req, res) => {
     res.write('<html>');
     res.write('<head><title>Assignment 1</title></head>');
     res.write(
-      '<body><form action="/create-user" method="POST"><input type="text" name="username"><button type="submit">Send</button></form></body>'
+      '<body><h1>Username Form</h1><form action="/create-user" method="POST"><label for=""></label><input type="text" name="username" id="username"><button type="submit">Send</button></form></body>'
     );
     res.write('</html>');
     return res.end();
@@ -20,15 +20,14 @@ const server = http.createServer((req, res) => {
     res.write('</html>');
     return res.end();
   }
-  // Send a HTML response with some "Page not found text
   if (url === '/create-user') {
     const body = [];
-    req.on('data', chunk => {
-      body.push(chunk);
+    req.on('data', dataChunk => {
+      body.push(dataChunk);
     });
     req.on('end', () => {
       const parsedBody = Buffer.concat(body).toString();
-      console.log(parsedBody.split('=')[1]); // username=whatever-the-user-entered
+      console.log(parsedBody.split('=')[1]); //username=input-from-user
     });
     res.statusCode = 302;
     res.setHeader('Location', '/');

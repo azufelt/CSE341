@@ -1,0 +1,28 @@
+After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this lesson.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+  https://github.com/azufelt/cse341
+
+3. Briefly list and describe the elements of the application that are functioning. 
+  ·localhost/server connection
+  ·both / and /user routes are working and return desired greeting
+  ·POST is successful, logs user input to console
+  ·Submit button adds user, and delivers new view back to the root
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+  I'm not sure if nodemon is working, or installed at the correct scope. 
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+  My favorite piece of this assigment was learning that I could have the server create a new file and store the user input data into that file! 
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+  I would have loved for this assignment to be on a live-published page. I know that comes with limitations, because of the dynamic-ness of the server portion. But it's always more impactful when it can be run on a live site. 
+
+7. Please select the category you feel best describes your assignment:
+
+   4 - Meets requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+  Each of the assignment points were included and executed. 
