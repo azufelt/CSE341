@@ -5,19 +5,21 @@ Please answer the questions in this text file and submit it to I-Learn.
   https://github.com/azufelt/cse341
 
 3. Briefly list and describe the elements of the application that are functioning. 
-  ·localhost/server connection
-  ·both / and /user routes are working and return desired greeting
-  ·POST is successful, logs user input to console
-  ·Submit button adds user, and delivers new view back to the root
+  ·Express and EJS were used
+  ·Middleware functions are routing correctly
+  ·Express used to serve static Public folder holds and displays client-side CSS
+  ·POST method is working, displaying key:value pair to console
+  ·User can input information
 
 4. Briefly describe any pieces of the assignment that are not yet working correctly.
-  I'm not sure if nodemon is working, or installed at the correct scope. 
+  ·Unsure if the '/' and '/user' are supposed to connect to the shop/add-product pages... It was partof the assignment to make a new directory for the '/' and '/user' so, I'm assuming they aren't connected. 
+
 
 5. Briefly describe the "coolest" thing you learned while completing this assignment.
-  My favorite piece of this assigment was learning that I could have the server create a new file and store the user input data into that file! 
+  Coolest thing I learned this week was how to use __dirname in Express. I know how difficult it can be to ensure that you get the correct path for everything to be routed correctly. Having this directory functionality built into exrpess is a really powerful variable that will do a lot in ensuring that links are nevere broken. 
 
 6. If you could change this assignment to be more effective or helpful, what would you change?
-  I would have loved for this assignment to be on a live-published page. I know that comes with limitations, because of the dynamic-ness of the server portion. But it's always more impactful when it can be run on a live site. 
+  I personally didn't like how short/small the assignment was. I would have preferred to build ON to the shop/admin page with adding a user registration or root index, etc. Making several small projects seems tedious and unnecessarily redundant. 
 
 7. Please select the category you feel best describes your assignment:
 
@@ -25,4 +27,4 @@ Please answer the questions in this text file and submit it to I-Learn.
 
 
 8. Provide a brief justification (1-2 sentences) for selecting that category.
-  Each of the assignment points were included and executed. 
+  I followed along completely with the provided materials and required project. Everything was done and working. 

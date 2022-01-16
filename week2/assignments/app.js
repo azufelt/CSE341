@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(userRoutes);
 app.use('/admin', userRoutes);
-// '/' is ALWAYS the defaut
+// '/' is ALWAYS the default
 app.use(homeRoutes);
 
 app.use((req, res, next) => {
