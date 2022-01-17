@@ -1,28 +1,25 @@
-const path = require('path');
-
 const express = require('express');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 
-app.set('view engine', 'ejs');
-app.set('views', 'views');
-
-const adminData = require('./routes/admin');
+const adminRoutes = require('./routes/admin');
 const shopRoutes = require('./routes/shop');
 
+//parse incoming request --will parse forms
 app.use(bodyParser.urlencoded({
   extended: false
 }));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/admin', adminData.routes);
+app.use(adminRoutes);
+app.use('/admin', adminRoutes);
+// '/' is ALWAYS the defaut
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-  res.status(404).render('404', {
-    pageTitle: 'Page Not Found'
-  });
+  res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
 
 app.listen(3000);

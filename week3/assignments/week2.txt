@@ -1,0 +1,30 @@
+After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this lesson.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+  https://github.com/azufelt/cse341
+
+3. Briefly list and describe the elements of the application that are functioning. 
+  ·Express and EJS were used
+  ·Middleware functions are routing correctly
+  ·Express used to serve static Public folder holds and displays client-side CSS
+  ·POST method is working, displaying key:value pair to console
+  ·User can input information
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+  ·Unsure if the '/' and '/user' are supposed to connect to the shop/add-product pages... It was partof the assignment to make a new directory for the '/' and '/user' so, I'm assuming they aren't connected. 
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+  Coolest thing I learned this week was how to use __dirname in Express. I know how difficult it can be to ensure that you get the correct path for everything to be routed correctly. Having this directory functionality built into exrpess is a really powerful variable that will do a lot in ensuring that links are nevere broken. 
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+  I personally didn't like how short/small the assignment was. I would have preferred to build ON to the shop/admin page with adding a user registration or root index, etc. Making several small projects seems tedious and unnecessarily redundant. 
+
+7. Please select the category you feel best describes your assignment:
+
+   4 - Meets requirements
+
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+  I followed along completely with the provided materials and required project. Everything was done and working. 
