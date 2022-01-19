@@ -3,13 +3,21 @@
  const rootDir = require('../util/path');
  const router = express.Router();
 
+ const users = [];
+
  router.get('/user', (req, res, next) => {
-   res.sendFile(path.join(rootDir, 'views', 'user.html'));
- });
+       res.render('add-product', {
+         pageTitle: 'Add User',
+         path: '/admin/add-user',
+         formsCSS: true,
+         activeUser: true,
+         userCSS: true
 
- router.post('/user', (req, res, next) => {
-   console.log(req.body);
-   res.redirect('/');
- });
+       });
 
- module.exports = router;
+       router.post('/user', (req, res, next) => {
+         console.log(req.body);
+         res.redirect('/');
+       });
+
+       module.exports = router;
