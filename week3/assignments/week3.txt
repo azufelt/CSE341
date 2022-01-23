@@ -1,0 +1,31 @@
+After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this lesson.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+   https://github.com/azufelt/cse341
+
+3. Briefly list and describe the elements of the application that are functioning. 
+   ·All paths are working
+   ·New product item can be added to shop.
+   ·Item is also stored in products.JSON
+   · Items can be deleted from shop
+   .Items can be added/deleted from customer cart
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+   Some weird glitches on how pages update to view
+   Sometimes the npm doesn't want to start
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+   Coolest thing I learned this week was really understanding more the routing path through routes>controller>view It takes a lot of turns, and can be pretty hard to follow.
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+   a lot of the going back and forth can be sort of hard to follow. I think it would be easier to set things up the "Correct" way, with an explanation of how and why. It's very confusing to have done a bunch of the code a certain way, but then we completely take it out and write it another way. Which is understandable, but confusing. I would rather learn it the whole way first, instead of the wrong way-baby steps. 
+
+7. Please select the category you feel best describes your assignment:
+
+   4 - Meets requirements
+ 
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+   4 -Meets requirements is what I chose because it is just that. There was a lot of content to follow this week, and not knowing which piece was going to be next, I didn't find the week's assignment lent toward leveraging any creativity or extra input. However, all of the videos were watched, and coded along with, and at the end of the week the shop site is indeed working. 

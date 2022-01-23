@@ -1,16 +1,1 @@
-[
-  {
-    "id": "123245",
-    "title": "A Book",
-    "imageUrl": "https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg",
-    "description": "This is an awesome book!",
-    "price": "19"
-  },
-  {
-    "id": "0.04082761782168465",
-    "title": "A cool Thing",
-    "imageUrl": "https://i.pinimg.com/564x/55/21/6e/55216e8855bd53e2e2fd75945bcd37e6.jpg",
-    "description": "Super cool new product ",
-    " price ": "100"
-  }
-]
+[{"id":"123245","title":"A Book","imageUrl":"https://www.publicdomainpictures.net/pictures/10000/velka/1-1210009435EGmE.jpg","description":"This is an awesome book!","price":"19"},{"id":"0.3815595329960586","title":"A cool new item","imageUrl":"www.coolitem.com","description":"Something awesome","price":"100"},{"id":"0.6184428636654435","title":"Something almost cool","imageUrl":"www.sortacool.com","description":"Not as cool as the really cool thing","price":"10"}]

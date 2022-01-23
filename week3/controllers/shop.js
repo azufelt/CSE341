@@ -41,10 +41,7 @@ exports.getCart = (req, res, next) => {
           prod => prod.id === product.id
         );
         if (cartProductData) {
-          cartProducts.push({
-            productData: product,
-            qty: cartProductData.qty
-          });
+          cartProducts.push({ productData: product, qty: cartProductData.qty });
         }
       }
       res.render('shop/cart', {
