@@ -1,0 +1,35 @@
+After completing the assignment, be sure to push to Github. You do not have to worry about pushing to Heroku this lesson.
+Please answer the questions in this text file and submit it to I-Learn.
+
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+  https://backendnodeproject.herokuapp.com
+
+3. Briefly list and describe the elements of the application that are functioning. 
+  The app is connecting to the MongoDB database
+  App is deployed on Heroku
+  validates user Id
+  products can be added, etc
+  details can be viewed
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+  My favorite thing this week was that I am also learning object oriented programming in python, and it's great to see and be familiar with the javascript objects that are being used for the schemas and understanding how they are used and methods are applied.
+
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+  These sections were extremely hard, having built everything last week to function properly on a localhost connection... I would have preferred not making code last weeek that worked, then changing it all around this week to work. I would rather build it correctly from the beginning. 
+
+  Also, there is just lots of switching around back and forth, which makes it difficult to follow the "path" of the code through the MVC model. 
+
+  I would break down the steps separately from one another... teach WHY we launch MongoDB in a better fashion, and how, as well as heroku. Then teach the adding of products on the app separate from the deployment connections. very confusing. 
+
+
+7. Please select the category you feel best describes your assignment:
+
+   4 - Meets requirements
+ 
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+    All items were working as show in the tutorials, I spent many hours helping my peers get their heroku and mongodb connected and running. 
