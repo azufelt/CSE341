@@ -1,0 +1,31 @@
+
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+  https://backendnodeproject.herokuapp.com
+  https://github.com/azufelt/cse341
+
+3. Briefly list and describe the elements of the application that are functioning. 
+  Login works, error message displays if authentication fails
+    Create an  account to login, or use: 
+        admin@test.com
+        password
+  Dynamic views are delivered
+  SendGrid is connected, authenticated and working
+  Route and CSRF protection are working
+  API keys are secure and hashed
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+  The "coolest" thing I learned this week was how to read and understand trouble shooting messages. At first I didn't know what to look for or how to fix it, but well, trouble-shoot enough and hyou rreally start to learn where to go look for bugs/errors! 
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+  The directions for the team assignment were awful, and hard to "Decode" what the desired outcome was supposed to be. I'm sure it was in effort to not give too much away, but it was a bit cryptic and vague. The "Tips" section is what had the useful information to know what to build and how to execute. 
+
+7. Please select the category you feel best describes your assignment:
+
+   5- exceeds requirements
+ 
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+    exceeding requirements this week, connected and ensured that SendGrid was working. Added additional dependencies to hash API keys. Added additional CSS both on Node Shop as well as for team assignment. 

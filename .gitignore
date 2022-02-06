@@ -4,3 +4,4 @@ node_modules/
 Procfile
 assignment/node_modules
 prove_assignments/node_modules
+.env
