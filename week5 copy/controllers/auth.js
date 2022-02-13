@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('../../week6/node_modules/dotenv/lib/main').config()
 
 const SECRET_KEY = process.env.EMAIL_API_KEY;
 const bcrypt = require('bcryptjs');

@@ -1,0 +1,29 @@
+
+1. Copy and paste the URL for your source code repository (e.g., GitHub):
+  https://backendnodeproject.herokuapp.com
+  https://github.com/azufelt/cse341
+
+3. Briefly list and describe the elements of the application that are functioning. 
+  ·Errors are routed through the 500 middleware
+  ·Login error message displays
+  ·login authentication works
+  ·Products can be ordered/deleted
+  ·sign-up verification is working
+
+
+4. Briefly describe any pieces of the assignment that are not yet working correctly.
+  Editing isn't available, other than deleting items from a user cart order. 
+
+5. Briefly describe the "coolest" thing you learned while completing this assignment.
+  Coolest thing I learned this week... it wasn't so much a "learn" as it was solidying of knowledge... MVC. I've worked with projects using MVC, and have been successful, but Node.js seems to have a few more steps involved. This weeek I was successful on my own going through each routing statement and check for the correct paths, requires, views, etc. 
+
+6. If you could change this assignment to be more effective or helpful, what would you change?
+  I would suggest spending time on peronalizing the site at this point. You definitely learn more when you are working inside the code and making it unique. 
+
+7. Please select the category you feel best describes your assignment:
+
+   5- meets requirements
+ 
+
+8. Provide a brief justification (1-2 sentences) for selecting that category.
+    meets requirements this week, completed all of the included pieces of the shop project, as well as did a few additional pieces to include products ensuring that they are accurrately working on the site. Did lots and lots of testing to check for various bugs and broken spots. 
