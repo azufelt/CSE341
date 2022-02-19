@@ -4,28 +4,18 @@
 
 <body>
     <%- include('../includes/navigation.ejs') %>
-
+<div>
+    <img src="https://cdn.glitch.me/ecfc9c03-d988-47a8-a8ef-305ee5cbb63b%2FHome%20Banner.jpg" class="heroimg">
+</div>
     <main>
         <% if (prods.length > 0) { %>
-            <div class="grid">
+            <div class="<%= pageTitle %>-grid grid">
                 <% for (let product of prods) { %>
                     <article class="card product-item">
-                        <header class="card__header">
-                            <h1 class="product__title"><%= product.title %></h1>
-                        </header>
-                        <div class="card__image">
+                            <a href="/products/<%= product._id %>" class="card card_hover">   <div class="card__image">
                             <img src="<%= product.imageUrl %>"
                                 alt="<%= product.title %>">
-                        </div>
-                        <div class="card__content">
-                            <h2 class="product__price">$<%= product.price %></h2>
-                            <p class="product__description"><%= product.description %></p>
-                        </div>
-                        <div class="card__actions">
-                            <a href="/products/<%= product._id %>" class="btn">Details</a>
-                            <% if (isAuthenticated) { %>
-                                <%- include('../includes/add-to-cart.ejs', {product: product}) %>
-                            <% } %>
+                    </a>
                         </div>
                     </article>
                 <% } %>

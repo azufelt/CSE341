@@ -24,10 +24,6 @@ const errorController = require('./controllers/error');
 const User = require('./models/user');
 
 const MONGODB_URI = process.env.MONGODB_URL || `mongodb+srv://azufelt:manager01@cluster0.ctdx0.mongodb.net/BackendNodeProject?retryWrites=true&w=majority`;
-//use ^^^ that keeps username & password confidential
-//MAx's veresion below
-// const MONGODB_URI = 'mongodb+srv://azufelt:manager01@cluster0.ctdx0.mongodb.net/BackendNodeProject';
-
 
 const app = express();
 const store = new MongoDBStore({
@@ -102,14 +98,14 @@ app.get('/500', errorController.get500);
 app.use(errorController.get404);
 
 app.use((error, req, res, next) => {
-  // res.status(error.httpStatusCode).render(...);
-  // res.redirect('/500');
   res.status(500).render('500', {
     pageTitle: 'Error!',
-    path: '/500',
+    path: '../500',
     isAuthenticated: req.session.isLoggedIn
   });
 });
+
+
 
 
 mongoose
@@ -120,42 +116,3 @@ mongoose
   .catch(err => {
     console.log(err);
   });
-
-// mongoose
-//   .connect(
-//     MONGODB_URI)
-//   .then(result => {
-//     app.listen(3000);
-//   })
-//   // .then(result => {
-//   //   User.findOne().then(user => {
-//   //     if (!user) {
-//   //       const user = new User({
-//   //         name: 'Ashley',
-//   //         email: 'ashley.zufelt@gmail.com',
-//   //         cart: {
-//   //           items: []
-//   //         }
-//   //       });
-//   //       user.save();
-//   //     }
-//   //   });
-//   //   app.listen(3000);
-//   // })
-//   .catch(err => {
-//     console.log(err);
-//   });
-
-app.use(function (err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // render the error page
-  console.error(err);
-  res.status(err.status || 500);
-  res.render('error', {
-    message: err.message,
-    error: err
-  });
-});

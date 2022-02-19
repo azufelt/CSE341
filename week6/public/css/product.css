@@ -12,9 +12,9 @@
 }
 
 .product__title {
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     text-align: center;
-    color: #f87060;
+    color: var(--accent-dark);
 }
 
 .product__price {
