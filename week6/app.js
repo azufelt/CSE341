@@ -1,8 +1,8 @@
 require('dotenv').config()
 
 // const SECRET_KEY = process.env.EMAIL_API_KEY;
-// const username = process.env.MONGODB_USERNAME;
-// const password = process.env.MONGO_PASSWORD;
+const username = process.env.MONGODB_USERNAME;
+const password = process.env.MONGO_PASSWORD;
 
 
 const path = require('path');
@@ -22,8 +22,27 @@ const flash = require('connect-flash');
 
 const errorController = require('./controllers/error');
 const User = require('./models/user');
+const {
+  MongoClient,
+  ServerApiVersion
+} = require('mongodb');
 
-const MONGODB_URI = process.env.MONGODB_URL || `mongodb+srv://azufelt:manager01@cluster0.ctdx0.mongodb.net/BackendNodeProject?retryWrites=true&w=majority`;
+const MONGODB_URI = `mongodb+srv://azufelt:${password}@redwood-design-shop.2u2we.mongodb.net/redwood-design-shop?retryWrites=true&w=majority`;
+const client = new MongoClient(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverApi: ServerApiVersion.v1
+});
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+
+// process.env.MONGODB_URL || `
+// mongodb + srv: //azufelt:${password}@redwood-design-shop.2u2we.mongodb.net/redwood-design-shop?retryWrites=true&w=majority
+// `;
 
 const app = express();
 const store = new MongoDBStore({
@@ -41,7 +60,7 @@ const shopRoutes = require('./routes/shop');
 const authRoutes = require('./routes/auth');
 
 const corsOptions = {
-  origin: "https://backendnodeproject.herokuapp.com/",
+  origin: "https://redwood-design-shop.herokuapp.com/",
   optionsSuccessStatus: 200
 };
 app.use(cors(corsOptions));
